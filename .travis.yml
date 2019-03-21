@@ -7,6 +7,7 @@ addons:
        secure: d43793e9db2a9538978092fc3f6f88ecbfa265aa
 script:
    - mvn clean install -DskipTests
+   - mvn cobertura:cobertura
 cache:
   directories:
     - "$HOME/.m2/repository"
