@@ -6,7 +6,7 @@ addons:
     token:
        secure: d43793e9db2a9538978092fc3f6f88ecbfa265aa
 script:
-   - sonar scanner
+   - mvn clean install -DskipTests
 cache:
   directories:
     - "$HOME/.m2/repository"
