@@ -1,5 +1,12 @@
 language: java
 jdk: openjdk11
+addons:
+  sonarcloud:
+    organization: "rahex-github"
+    token:
+       secure: d43793e9db2a9538978092fc3f6f88ecbfa265aa
+script:
+   - sonar scanner
 cache:
   directories:
     - "$HOME/.m2/repository"
